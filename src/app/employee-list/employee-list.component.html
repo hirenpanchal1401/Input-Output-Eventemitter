@@ -1,0 +1,18 @@
+<div>
+  <table>
+    <tr>
+      <td>
+        <input type='radio' name="users" value="All" [(ngModel)]="selectedRadioButtonValue" 
+        (change)=" callRadioButtonChange()"> All({{All}})
+      </td>
+      <td>
+        <input type='radio' name="users" value="Male" [(ngModel)]="selectedRadioButtonValue" 
+        (change)=" callRadioButtonChange()"> Male({{Male}})
+      </td>
+      <td>
+        <input type='radio' name="users" value="Female" [(ngModel)]="selectedRadioButtonValue"
+         (change)=" callRadioButtonChange()"> Female({{Female}})
+      </td>
+    </tr>
+  </table>
+</div>

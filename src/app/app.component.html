@@ -1,0 +1,85 @@
+
+<app-employee-list [All]="getAllEmployee()" [Female]="getFemaleEmployee()"
+[Male]="getMaleEmployee()" (onRadioButtonChange)="countButtonCall($event)"></app-employee-list>
+<table>
+  <thead>
+    <tr>
+      <th>
+        ID
+      </th>
+      <th>
+        Name
+      </th>
+      <th>
+        Gender
+      </th>
+      <th>
+        City
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <ng-container *ngFor="let e of emps">
+    <tr *ngIf="selectedRadioButtonValue == 'All' || e.egender == selectedRadioButtonValue">
+      <td>
+       {{ e.eid }}      
+      </td>
+      <td>
+        {{e.enmae}}
+      </td>
+      <td>
+        {{ e.egender}}
+      </td>
+      <td>
+        {{ e.ecity}}
+      </td>
+    </tr>
+  </ng-container>
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <mat-card>
+    <mat-form-field>
+      <input matInput [(ngModel)]="answer" placeholder="Who is best Actor?">
+    </mat-form-field>
+  
+    <br>
+    
+    <button mat-raised-button (click)="showAnswer()">Answer me</button>
+    <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
+  </mat-card>
+  
+  
+  <mat-card *ngIf="answerDisplay">
+    <h1>{{ answerDisplay }}, you're damn right.</h1>
+  </mat-card>
+   -->
+
+
+
+

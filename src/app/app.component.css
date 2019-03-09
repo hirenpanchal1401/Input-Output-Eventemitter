@@ -1,0 +1,31 @@
+.example-icon {
+    padding: 0 14px;
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+
+  table 
+  {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  thead th{
+   border:1px solid black; 
+   border-collapse: collapse;
+   background-color: gray;
+   color:white;
+   padding: 10px;
+  }
+
+  tbody td{
+    border:1px solid black; 
+    border-collapse: collapse;
+    background-color: rgb(87, 60, 238);
+    color:white;
+    padding: 5px;
+   }
